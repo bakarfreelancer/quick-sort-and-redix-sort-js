@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucket and Radix Sort</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bucketSort">
+      <div class="container">
+        <h1>Bucket Sort</h1>
+        <div>
+          <input type="number" class="bucketInput" />
+          <button onclick="addValueForBucketSort()" class="add">Add</button>
+          <button onclick="applyBucketSort()" class="sort">Sort</button>
+        </div>
+        <div class="lists">
+          <div>
+            <h3 class="unSorted">Unsorted</h3>
+            <ul class="bucketValues"></ul>
+          </div>
+          <div>
+            <h3 class="sorted">Sorted</h3>
+            <ul class="sortedBucketValues"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quickSort">
+      <div class="container">
+        <h1>Quick Sort</h1>
+        <div>
+          <input type="number" class="quickSortInput" />
+          <button onclick="addValueForQuickSort()" class="add">Add</button>
+          <button onclick="applyQuickSort()" class="sort">Sort</button>
+        </div>
+        <div class="lists">
+          <div>
+            <h3 class="unSorted">Unsorted</h3>
+            <ul class="quickSortValues"></ul>
+          </div>
+          <div>
+            <h3 class="sorted">Sorted</h3>
+            <ul class="quickSortedValues"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
